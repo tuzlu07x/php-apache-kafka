@@ -1,0 +1,24 @@
+{
+  "name": "fatihtuzlu/php-cdc",
+  "description": "You can manage your multidata with this package",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Fatihtuzlu\\PhpCdc\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Fatih Tuzlu",
+      "email": "fatihtuzlu07@gmail.com"
+    }
+  ],
+  "require": {
+    "elasticsearch/elasticsearch": "^8.12"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
