@@ -7,7 +7,7 @@ PHP Kafka CDC is a package developed by Fatih Tuzlu for managing multidata with 
 You can install PHP Kafka CDC via Composer. Run the following command in your terminal:
 
 ```
-composer require fatihtuzlu/php-cdc
+composer require fatihtuzlu/php-apache-kafka
 ```
 
 ## Requirements

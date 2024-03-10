@@ -1,5 +1,5 @@
 {
-  "name": "fatihtuzlu/php-cdc",
+  "name": "fatihtuzlu/php-apache-kafka",
   "description": "You can manage your multidata with this package",
   "license": "MIT",
   "autoload": {
