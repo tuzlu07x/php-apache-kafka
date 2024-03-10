@@ -14,7 +14,6 @@
     }
   ],
   "require": {
-    "elasticsearch/elasticsearch": "^8.12",
     "idealo/php-rdkafka-ffi": "^0.5.0"
   },
   "allow-plugins": {
