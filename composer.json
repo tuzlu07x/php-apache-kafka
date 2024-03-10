@@ -4,7 +4,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Fatihtuzlu\\PhpCdc\\": "src/"
+      "Fatihtuzlu\\PHPKafkaCDC\\": "src/Kafka"
     }
   },
   "authors": [
@@ -14,11 +14,15 @@
     }
   ],
   "require": {
-    "elasticsearch/elasticsearch": "^8.12"
+    "elasticsearch/elasticsearch": "^8.12",
+    "idealo/php-rdkafka-ffi": "^0.5.0"
+  },
+  "allow-plugins": {
+    "php-http/discovery": false
   },
   "config": {
     "allow-plugins": {
-      "php-http/discovery": true
+      "php-http/discovery": false
     }
   }
 }
