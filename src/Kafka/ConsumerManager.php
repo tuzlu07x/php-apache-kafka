@@ -14,10 +14,9 @@ class ConsumerManager extends Kafka
     public function __construct(
         private string $topic,
         private string $groupId,
-        private ?string $baseUrl,
-        private ?string $port
+        private string $bootstrapServers,
     ) {
-        $this->setBootstrapServer($baseUrl . ":" . $port);
+        $this->setBootstrapServer($bootstrapServers);
         $this->setGroupId($groupId);
         $config = new Conf();
         parent::__construct($config);

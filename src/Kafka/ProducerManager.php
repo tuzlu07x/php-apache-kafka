@@ -43,15 +43,12 @@ class ProducerManager extends Kafka
      *
      * @param string $message The message to send.
      * @param int $flush The number of messages to buffer before flushing.
-     * @param bool $debug Enable debugging for the current request.
      * @throws Exception If an error occurs during message sending.
      * @return void
      */
-    public function sendMessages(string $message, int $flush = 1000, bool $debug = false): void
+    public function sendMessages(string $message, int $flush = 1000): void
     {
         try {
-            if ($debug) $this->debug();
-            $this->addBrokers($this->bootstrapServers);
             $topic = $this->producer->newTopic($this->topic);
             $topic->produce(RD_KAFKA_PARTITION_UA, 0, $message);
             $this->flush($flush);
