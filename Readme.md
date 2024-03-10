@@ -2,6 +2,47 @@
 
 PHP Kafka CDC is a package developed by Fatih Tuzlu for managing multidata with Apache Kafka in PHP applications. It provides functionalities for both consuming and producing messages using Kafka.
 
+## Remember
+
+Do not forget to install rdkafka library
+
+### Macos
+
+```
+brew install librdkafka
+```
+
+### Debian
+
+```
+$ apt install librdkafka-dev
+```
+
+### RedHat, CentOS, Fedora
+
+```
+$ yum install librdkafka-devel
+```
+
+### Windows
+
+```
+# Install vcpkg if not already installed
+$ git clone https://github.com/Microsoft/vcpkg.git
+$ cd vcpkg
+$ ./bootstrap-vcpkg.sh
+$ ./vcpkg integrate install
+
+# Install librdkafka
+$ vcpkg install librdkafka
+```
+
+### For Detail
+
+```
+You can visit https://github.com/confluentinc/librdkafka
+```
+
 ## Installation
 
 You can install PHP Kafka CDC via Composer. Run the following command in your terminal:
